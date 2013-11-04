@@ -1,0 +1,1 @@
+java -cp LetterFrequencies.jar;rogets.jar -Delkb.path=roget_elkb %*

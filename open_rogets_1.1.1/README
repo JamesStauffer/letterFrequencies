@@ -1,0 +1,95 @@
+----------------
+Open Roget's 1.1
+----------------
+Thank you for downloading The Open Roget's Thesaurus.
+
+-----
+SETUP
+-----
+The data base can be found in roget_elkb.  This directory should be placed
+in your home directory.
+
+---------
+EXECUTION
+---------
+This folder should also contain a jar called rogets.jar
+
+To execute it using Java 1.5 used 
+> java -jar rogets.jar
+You may require crimson.jar.  It can be obtained at: http://xml.apache.org/crimson/
+Another way to run the thesaurus is:
+> java -cp rogets.jar ca.site.elkb.RogetELKB
+
+------------
+APPLICATIONS
+------------
+There are three applications, the driver, lexical Chains and semDist.  The driver can be
+used to construct a new index that can be placed in the roget_elkb/1911 folder.  It is not
+necessary to run this program to generate the index since it has been provided already.
+
+The lexical Chains application builds lexical chains out of a file of text.  Executed:
+java -cp .:../rogets.jar LexicalChain <input file>
+
+The semDist application finds the semantic distance between pairs of words
+java -cp .:../rogets.jar SemDist <input file>
+
+The wordPower application picks the best synonym from a set of candidatest
+java -cp .:../rogets.jar WordPower <input file>
+
+The wordCluster application clusters groups of words (see radioactive_materials.txt and 
+radioactive_materials_res.txt for file formats)
+java -cp .:../rogets.jar WordCluster <input file> <output file>
+
+All of these applications require rogets.jar and possibley crimson.jar (depending on your
+system) to be in the path.
+
+A Driver is included which can be used to rebuild the index.  We do not recommend using it
+unless you know what you are doing.
+
+-------------
+DOCUMENTATION
+-------------
+JavaDoc documentation can be found in the doc folder.
+
+the source for rogets.jar can be found in the folder roget_source.
+
+-------
+CONTACT
+-------
+Any questions or comments should be sent to:
+Alistair Kennedy: akennedy@site.uottawa.ca 
+or
+Dr. Stan Szpakowicz: szpak@site.uottawa.ca
+
+-------
+LICENSE
+-------
+These programs are free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+
+COPYRIGHT
+Copyright (C) 2007 
+Mario Jarmasz, Alistair Kennedy and Stan Szpakowicz
+School of Information Technology and Engineering (SITE)
+University of Ottawa, 800 King Edward Avenue
+Ottawa, Ontario, Canada, K1N 6N5
+
+and
+
+Olena Medelyan
+Department of Computer Science,
+The University of Waikato
+Private Bag 3105, Hamilton, New Zealand
+
